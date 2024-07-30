@@ -4,4 +4,4 @@
 - /tabreload
 
 **Links**
-- [Spigot-MC](https://www.spigotmc.org/resources/)
+- [Spigot-MC](https://www.spigotmc.org/resources/mytablist.118495/)
