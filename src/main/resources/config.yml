@@ -1,0 +1,76 @@
+#
+# Hey, this config file!
+#
+
+prefix:
+  # PREFIX (GAMEMODE) -> {p-gamemode}
+  creative: "§6[C]"
+  spectator: "§b[S]"
+  adventure: "§d[A]"
+  survival: "§c[S]"
+
+  # PREFIX (WORLD) -> {p-world}
+  normal: "<gr #3ffe3f:#00be00>{player}</gr>"
+  nether: "<gr #fe3f3f:#be0000>{player}</gr>"
+  the_end: "<gr #fe3ffe:#be00be>{player}</gr>"
+  custom: ""
+
+  # PREFIX OP -> {p-op}
+  op: "#8383FF*"
+  noop: ""
+
+
+suffix:
+  # SUFFIX (GAMEMODE) -> {s-gamemode}
+  creative: ""
+  spectator: ""
+  adventure: ""
+  survival: ""
+
+  # SUFFIX (WORLD) -> {s-world}
+  normal: ""
+  nether: ""
+  the_end: ""
+  custom: ""
+
+  # SUFFIX OP -> {s-op}
+  op: ""
+  noop: ""
+
+
+# - - - - - - - - - - - - - - - - - - - - -
+# FINAL
+# req. {player} - raw nickname
+
+# Use {p-gamemode}, {p-world} and {p-op} (PREFIX params)
+# and {s-gamemode}, {s-world} and {s-op} (SUFFIX params)
+# etc. {prefix} - minecraft scoreboard team prefix
+# etc. {suffix} - minecraft scoreboard team prefix
+
+# LuckPerms support
+# {lp-prefix}, {lp-suffix}
+
+final:
+  tab: "{p-gamemode} §r{lp-prefix}§r{prefix}§r{p-op}§r{p-world}§r{suffix}§r{s-op}§r{lp-suffix}"
+  chat_name: "§r{prefix}§r{p-op}§r{p-world}§r{suffix}§r{s-op}§r{lp-suffix}"
+
+enabled:
+  tab: true
+  chat_name: true
+
+lp:
+  multi_prefix_enabled: true
+  multi_prefix_separator: "&r"
+
+  multi_suffix_enabled: true
+  multi_suffix_separator: "&r"
+
+# - - - - - - - - - - - - - - - - - - - - -
+# ETC INFO
+#
+# <gr #ffffff:#000000>text</gr>  -  gradient!!!
+#
+# {???}  -  you can use it in the topmost configuration! (example):
+#	prefix:
+#	  normal: "<gr #be0000:#fa7878>{player}</gr>"
+#

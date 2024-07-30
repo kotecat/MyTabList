@@ -1,0 +1,16 @@
+name: MyTabList
+version: '${project.version}'
+main: org.koteyka.mytablist.MyTabList
+api-version: '1.16'
+description: "tab manager"
+author: "MrKoteee"
+
+commands:
+  tabreload:
+    description: reload configurations
+    usage: /<command>
+    permission: "mytablist.cmd.reload"
+
+permissions:
+  mytablist.cmd.reload:
+    default: op
